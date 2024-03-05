@@ -1,0 +1,27 @@
+POST:
+curl -i -X POST   'https://api.clickup.com/api/v2/space/90130557087/folder'
+    -H 'Authorization: pk_78819917_NIS0MJPJJ03BPCORF7CG27WG5B160A1G'
+    -H 'Content-Type: application/json'
+    -d '{
+        "name": "This is my new Folder"
+    }'
+
+GET:
+curl -i -X GET
+  'https://api.clickup.com/api/v2/space/90130557087/folder?archived=false'
+  -H 'Authorization: pk_78819917_NIS0MJPJJ03BPCORF7CG27WG5B160A1G'
+
+PUT:
+curl -i -X PUT
+  'https://api.clickup.com/api/v2/folder/90131223407'
+  -H 'Authorization: pk_78819917_NIS0MJPJJ03BPCORF7CG27WG5B160A1G'
+  -H 'Content-Type: application/json'
+  -d '{
+    "name": "Updated Folder name"
+  }'
+
+DELETE:
+curl -i -X DELETE
+  'https://api.clickup.com/api/v2/folder/90131223407'
+  -H 'Authorization: pk_78819917_NIS0MJPJJ03BPCORF7CG27WG5B160A1G'
+
